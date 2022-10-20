@@ -301,7 +301,7 @@ def index(stop_number: str):
     try:
         [info.update(content.routes) for info in content.actual]
     except AttributeError:
-        return "This stop doesn't exist"
+        abort(404)
 
     show_image = request.cookies.get('showImage')
 
