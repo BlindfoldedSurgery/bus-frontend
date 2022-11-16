@@ -32,6 +32,7 @@ ingress:
     hosts:
       - bus.timhatdiehandandermaus.consulting
       - tram.timhatdiehandandermaus.consulting
+      - abfahrt.io
   images:
     hosts:
       - images.timhatdiehandandermaus.consulting
