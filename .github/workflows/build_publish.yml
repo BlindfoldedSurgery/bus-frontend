@@ -14,7 +14,7 @@ jobs:
       - name: update tag in manifest.yml
         run: sed -i -e "s#__TAG__#${GITHUB_SHA}#g" values.yaml
       - name: install helm chart
-        uses: WyriHaximus/github-action-helm3@v2
+        uses: WyriHaximus/github-action-helm3@v3
         with:
           exec: helm lint --strict
 
@@ -42,7 +42,7 @@ jobs:
       - name: update password in manifest.yml
         run: sed -i -e "s#__TAG__#${GITHUB_SHA}#g" values.yaml
       - name: install helm chart
-        uses: WyriHaximus/github-action-helm3@v2
+        uses: WyriHaximus/github-action-helm3@v3
         with:
           exec: helm upgrade bus-frontend . --install --namespace=timhatdiehandandermaus --atomic
           kubeconfig: ${{ secrets.KUBECONFIG_RAW }}
