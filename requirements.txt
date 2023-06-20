@@ -1,6 +1,6 @@
 requests==2.31.0
 flask==2.3.2
-dataclasses_json==0.5.7
+dataclasses_json==0.5.8
 uwsgi==2.0.21
 flask_minify==0.42
 schedule==1.2.0
