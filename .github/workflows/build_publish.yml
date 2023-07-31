@@ -29,9 +29,9 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build the tagged Docker image
-        run: docker build -t ghcr.io/tim-hat-die-hand-an-der-maus/bus-frontend:${GITHUB_SHA} .
+        run: docker build -t ghcr.io/blindfoldedsurgery/bus-frontend:${GITHUB_SHA} .
       - name: Push the tagged Docker image
-        run: docker push ghcr.io/tim-hat-die-hand-an-der-maus/bus-frontend:${GITHUB_SHA}
+        run: docker push ghcr.io/blindfoldedsurgery/bus-frontend:${GITHUB_SHA}
 
   deploy:
     name: "Publish to k8s"
