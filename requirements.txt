@@ -5,4 +5,4 @@ uwsgi==2.0.24
 flask_minify==0.42
 schedule==1.2.1
 fuzzywuzzy==0.18.0
-python-Levenshtein==0.24.0
+python-Levenshtein==0.25.0
